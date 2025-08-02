@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Check</title>
+</head>
+<body>
+  <script>
+    const isEqualTo100 = (a, b) => a === 100 || b === 100;
+    console.log(isEqualTo100(100, 0));  // true
+    console.log(isEqualTo100(0, 100));  // true
+
+    console.log(isEqualTo100(50, 50));  // false
+    console.log(isEqualTo100(20,90));   //false
+    console.log(isEqualTo100(70,10));   //false
+
+    //-----------------------------------------------------
+
+    const EqualTo100 = (a, b) => (a+b) === 100;
+    console.log(EqualTo100(50, 50));    //true
+    console.log(EqualTo100(20, 80));    //true
+    console.log(EqualTo100(90, 10));    //true
+
+    console.log(EqualTo100(10, 10));   //false
+    console.log(EqualTo100(70, 10));   //false
+  </script>
+</body>
+</html>
